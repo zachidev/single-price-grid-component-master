@@ -8,11 +8,12 @@ body{
 }
 .container{
 	margin: auto;
-	box-shadow: 0 0 .25rem 0 #ddd;
+	box-shadow: 0 .25rem .25rem 0 #bbb;
 	border-radius: .4rem;
 }
 .heading {
 	background-color: #fffefe;
+	padding-right: 2rem;
 }
 .heading h1{
 	color: #45a0a4;
@@ -26,7 +27,7 @@ body{
 	color: #b4b9c6;
 	font-size: .875rem;
 	line-height: 1.75rem;
-	letter-spacing: .5px;
+	letter-spacing: 1px;
 }
 .heading, .price, .why {
 	padding: 1.5rem 2.5rem;
@@ -59,9 +60,14 @@ body{
 	text-align: center;
 	padding: .875rem;
 	border-radius: .25rem;
+	text-decoration: none;
 	color: #fff;
 	box-shadow: 0 .25rem .5rem 0 #777;
 	background-color: #bfde33;
+	transition: background-color .3s;
+}
+.price a:hover{
+	background-color: #d1ee4e;
 }
 .price p{
 	color: lightgrey;
@@ -75,8 +81,9 @@ body{
 	font-weight: 500;
 }
 .why p{
-	padding-right: 2rem;
 	color: #ccc;
+	padding-right: 2.5rem;
+	word-break: break-word;
 }
 .split{
 	display: grid;
